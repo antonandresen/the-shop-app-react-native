@@ -28,7 +28,7 @@ export default (state = initialState, action) => {
       }
       return {
         ...state, // dont rly need cause we manipulate all data points in state.
-        items: { ...state.items, [addedProduct.id]: newCartItem },
+        items: { ...state.items, [addedProduct.id]: updatedOrNewCartItem },
         totalAmount: state.totalAmount + prodPrice,
       };
   }

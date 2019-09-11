@@ -12,8 +12,8 @@ const CartScreen = props => {
       <View style={styles.summary}>
         <Text style={styles.summaryText}>
           Total: <Text style={styles.amount}>${cartTotalAmount}</Text>
-          <Button title='Order Now' />
         </Text>
+        <Button title='Order Now' />
       </View>
 
       {/* CART CONTAINS SECTION */}
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   amount: {
-    color: Colors.accent,
+    color: Colors.primary,
   },
 });
 
